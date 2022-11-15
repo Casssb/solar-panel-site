@@ -92,7 +92,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background-image: url('/img/solar-panel-index.jpg');
+  background-image: url('img/solar-panel-index.jpg');
 }
 
 .hero-title {
