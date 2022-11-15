@@ -4,11 +4,19 @@
 
 .testimonial-header {
   color: var(--col-dark-grey);
-  height: 25vh;
-  text-align: center;
-  margin: 0 auto;
+  height: 35vh;
   width: 75vw;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.testimonial-header h1,
+h2 {
+  padding: 0.5rem;
+  color: var(--col-dark-grey);
 }
 
 .testimonials {
@@ -34,13 +42,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 3rem 5rem;
 }
 
 .testimonial h2,
 .testimonial-quote {
   font-size: var(--font-size-base);
+  line-height: var(--font-size-base);
   margin: 1rem;
+  padding: 1rem;
 }
 
 .testimonial h2 {
@@ -50,25 +60,36 @@
 
 .testimonial-quote {
   font-style: italic;
+  line-height: 2rem;
 }
 
 .testimonial-quote:before {
-  font-size: var(--font-size-xl);
-  content: "\201C";
+  content: open-quote;
 }
 
 .testimonial-quote:after {
-  font-size: var(--font-size-xl);
-  content: "\201d";
+  content: close-quote;
 }
 
+.testimonial-quote:before,
+.testimonial-quote:after {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: var(--font-size-lg);
+  top: 0.2em;
+  font-size: 4rem;
+  position: relative;
+}
 .testimonial-img {
   height: 20rem;
+  border-radius: 0.5rem;
 }
 
 .testimonial:nth-child(even) img {
-  border: 0.1rem solid var(--col-dark-grey);
+  background-color: var(--col-dark-grey);
+  border: 1px solid var(--col-dark-grey);
 }
 .testimonial:nth-child(odd) img {
-  border: 0.1rem solid var(--col-light-grey);
+  background-color: var(--col-light-grey);
+  border: 1px solid var(--col-light-grey);
 }
