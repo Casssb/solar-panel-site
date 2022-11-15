@@ -80,7 +80,34 @@ body {
 }
 
 .index-hero {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.hero-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--col-dark-grey);
+  padding: 2rem;
+}
+
+.index-hero-btn {
+  border: none;
+  background-color: var(--col-light-grey);
+  color: var(--col-dark-grey);
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-size: var(--font-size-md);
+  box-shadow: var(--box-shadow);
+}
+
+.index-hero-btn:hover {
+  cursor: pointer;
+  background-color: #e6e2dec9;
 }
 
 @media screen and (max-width: 700px) {
