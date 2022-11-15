@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 * {
@@ -79,27 +81,29 @@ body {
   display: none;
 }
 
-
+/*
 body {
     color: white;
 
     background-image: url("https://media.istockphoto.com/id/595348485/photo/pink-sunset-sky-over-mountains-and-calm-lake-elgol-skye-scotland.jpg?b=1&s=170667a&w=0&k=20&c=pYVAf2BLKkrq9I2xB5EljwUbKJieYzE6JvDaMr1900s=");
-    /* 
+    
     background-color: #cccccc;
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;              
-    height: 1000px
-    */
-
+    height: 450px
+  
    }
+*/ 
+
+
 
 .about {
     font-size: 25px;
     text-align: center;
     color: black;
     background-color: #cccccc;
-    opacity: 0.7;
+    opacity: 01;
     border-radius: 10px;
     
 }
