@@ -8,7 +8,7 @@
 :root {
   --col-brown: #56350a;
   --col-light-grey: #e6e2de;
-  --col-med-grey: #434a44;
+  --col-med-grey: #434a4494;
   --col-dark-grey: #1d1e1e;
   --col-beige: #ddcfb1;
 
@@ -23,4 +23,109 @@
   --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-family-main);
+  background-image: url('/img/solar-panel-index.jpg');
+}
+
+.index-header {
+  height: min-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--col-med-grey);
+}
+
+.index-logo {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--col-light-grey);
+  font-size: var(--font-size-md);
+  margin-left: 2rem;
+}
+
+.index-logo-span {
+  color: var(--col-beige);
+}
+
+.index-logo svg {
+  color: var(--col-beige);
+  transform: scale(1.6);
+}
+
+.index-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+  font-size: var(--font-size-base);
+}
+
+.index-links a {
+  text-decoration: none;
+  color: var(--col-light-grey);
+}
+
+.index-hamburger {
+  display: none;
+}
+
+.index-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.hero-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--col-dark-grey);
+  padding: 2rem;
+}
+
+.index-hero-btn {
+  border: none;
+  background-color: var(--col-light-grey);
+  color: var(--col-dark-grey);
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-size: var(--font-size-md);
+  box-shadow: var(--box-shadow);
+}
+
+.index-hero-btn:hover {
+  cursor: pointer;
+  background-color: #e6e2dec9;
+}
+
+@media screen and (max-width: 700px) {
+  .index-nav {
+    display: none;
+  }
+
+  .index-hamburger {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .line {
+    background-color: var(--col-beige);
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 15px;
+  }
 }
