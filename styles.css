@@ -253,8 +253,20 @@ body {
   .line {
     background-color: var(--col-beige);
     width: 30px;
-    height: 3px;
+    height: 5px;
     margin: 5px;
     border-radius: 15px;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 15px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-6px, -15px);
   }
 }
