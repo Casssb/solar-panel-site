@@ -126,7 +126,6 @@ section {
     font-size: 35px;
     border-radius: 10px;
   /*  background-color: #cccccc; */
-    color: white;
     opacity: 1;
 
 
@@ -147,3 +146,62 @@ section {
 .section-center {
     font-size: 22px;
 }
+
+@keyframes example {
+    from {color: black;}
+    to {color: white;}
+  }
+  
+  /* The element to apply the animation to */
+
+#line4 {
+    color: black;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+
+#line5 {
+    color: black;
+    animation-name: example;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+#line1 {
+    color: black;
+    animation-name: example;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+  }
+
+  @keyframes example {
+    from {color: black;}
+    to {color: white;}
+  }
+  
+  /* The element to apply the animation to */
+#line2 {
+    color: black;
+    animation-name: example;
+    animation-delay: 4.2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes example {
+    from {color: black;}
+    to {color: white;}
+  }
+  
+  /* The element to apply the animation to */
+#line3 {
+    color: black;
+    animation-name: example;
+    animation-delay: 4.4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
