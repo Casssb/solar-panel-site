@@ -3,9 +3,9 @@
 }
 
 .testimonial-header {
-  color: var(--col-dark-grey);
+  background-image: url("img/solar-panel-index.jpg");
   height: 35vh;
-  width: 75vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -30,15 +30,17 @@
 .testimonial:nth-child(even) {
   background-color: var(--col-light-grey);
   color: var(--col-dark-grey);
-  box-shadow: var(--box-shadow);
+  flex-direction: row-reverse;
 }
 .testimonial:nth-child(odd) {
   background-color: var(--col-dark-grey);
   color: var(--col-light-grey);
+  box-shadow: 0px 0px 10px 5px var(--col-dark-grey);
+  z-index: 1;
 }
 
 .testimonial {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,8 +83,17 @@
   position: relative;
 }
 .testimonial-img {
+  cursor: zoom-in;
   height: 20rem;
   border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.image-zoom {
+  height: 60vh;
+  width: auto;
+  cursor: zoom-out;
+  transition: 1s;
 }
 
 .testimonial:nth-child(even) img {
