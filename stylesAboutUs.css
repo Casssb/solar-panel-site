@@ -1,3 +1,19 @@
+video#myVideo { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -99,32 +115,35 @@ body {
 
 
 .about {
-    font-size: 25px;
-    text-align: center;
-    color: black;
-    background-color: #cccccc;
+    font-size: 10px;
+    color:white;
     opacity: 01;
     border-radius: 10px;
     
 }
 
 section {
-    
-    text-align: center;
+    font-size: 35px;
     border-radius: 10px;
-    background-color: #cccccc;
-    color: black;
-    opacity: 0.7;
+  /*  background-color: #cccccc; */
+    color: white;
+    opacity: 1;
 
 
 }
 
 .faq {
-    
+  text-align: center; 
+  background-color: var(--col-med-grey);  
   position: fixed;
+  width: max-content;
   left: 50%;
   bottom: 1px;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-    
+  border-radius: 10px;  
+}
+
+.section-center {
+    font-size: 22px;
 }
