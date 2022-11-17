@@ -121,6 +121,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 80vh;
+  padding: 3rem;
   background-image: url('img/solar-panel-index.jpg');
 }
 
@@ -155,6 +156,7 @@ body {
   background-color: var(--col-light-grey);
   height: 80vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -189,6 +191,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
   background-color: var(--col-dark-grey);
 }
 
@@ -226,6 +229,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   background-color: var(--col-light-grey);
 }
 
@@ -233,8 +237,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
-    padding: 1.4rem;
+    gap: 2rem;
+    padding: 1rem;
     list-style: none;
     transform: scale(1.2);
 }
@@ -269,4 +273,19 @@ body {
   .toggle .line3 {
     transform: rotate(45deg) translate(-6px, -15px);
   }
+  .index-services {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .index-services-card {
+    width: 80%;
+  }
+
+  .index-card-img-container {
+    width: 80vw;
+    height: 40vh;
+  }
+
 }
