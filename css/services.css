@@ -9,7 +9,7 @@ body {
 
 }
 .service {
-    background-color: #f8f9fa0f;
+    background-color: #f8f9fa30;
 }
 .mt {
     margin-top: 2rem;
@@ -29,6 +29,9 @@ body {
 .main-text {
     font-size: 3rem;
 }
+.black {
+    color: black;
+}
 section {
     margin-bottom: 2rem;
     padding: 2rem; 
@@ -43,8 +46,7 @@ section {
 }
 .container img {
     padding: 2vh;
-    width: 70%;
-    height: 25rem;
+    height: 10rem;
 }
 ul {
     list-style-type: none;
