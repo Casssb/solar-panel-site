@@ -31,6 +31,58 @@ body {
   background-color:var(--col-light-grey)
 }
 
+/* Nav bar */
+.index-header {
+  height: min-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--col-med-grey);
+  opacity: 0.6;
+  position: fixed;
+  z-index: 9999;
+}
+
+.index-logo {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--col-light-grey);
+  font-size: var(--font-size-md);
+  margin-left: 2rem;
+}
+
+.index-logo-span {
+  color: var(--col-beige);
+}
+
+.index-logo svg {
+  color: var(--col-beige);
+  transform: scale(1.6);
+}
+
+.index-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+  font-size: var(--font-size-base);
+}
+
+.index-links a {
+  text-decoration: none;
+  color: var(--col-light-grey);
+}
+
+.index-hamburger {
+  display: none;
+}
+
+/* styles to form section */
 section {
   position: relative;
   z-index: 3;
@@ -49,6 +101,7 @@ section {
 .section-header {
   margin-bottom: 50px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .section-header h2 {
@@ -84,6 +137,7 @@ section {
   background-color: #fff;
   text-align: center;
   border-radius: 50%;
+  position: sticky;
 }
 
 .contact-info-icon i {
@@ -112,6 +166,7 @@ section {
   width: 45%;
   padding-bottom: 20px;
   padding-top: 20px;
+ 
 }
 
 .contact-form h2 {
@@ -177,6 +232,46 @@ section {
   color: #00bcd4;
 }
 
+/* Footer*/
 
-  
+.index-footer {
+  height: min-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--col-light-grey);
+}
+
+.index-socials, .index-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 1.4rem;
+  list-style: none;
+  transform: scale(1.2);
+}
+
+/* Media Qs*/
+@media screen and (max-width: 700px) {
+  .index-nav {
+    display: none;
+  }
+
+  .index-hamburger {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .line {
+    background-color: var(--col-beige);
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 15px;
+  }
+}
   
