@@ -84,14 +84,14 @@
 }
 .testimonial-img {
   cursor: zoom-in;
-  height: 20rem;
+  width: 25vw;
   border-radius: 0.5rem;
   transition: 0.5s;
 }
 
 .image-zoom {
-  height: 60vh;
-  width: auto;
+  width: 40vw;
+  height: auto;
   cursor: zoom-out;
   transition: 1s;
 }
@@ -103,4 +103,24 @@
 .testimonial:nth-child(odd) img {
   background-color: var(--col-light-grey);
   border: 1px solid var(--col-light-grey);
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    flex-direction: column !important;
+  }
+
+  .testimonial-img {
+    width: 50vw;
+  }
+
+  .image-zoom {
+    width: 80vw;
+  }
+
+  .testimonial h2,
+  .testimonial-quote {
+    margin: 0;
+    padding: 0;
+  }
 }
