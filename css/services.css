@@ -1,0 +1,105 @@
+body {
+    background-image: url(https://free-images.com/lg/fce7/solar_cells_solar_solar_0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+}
+.services-main {
+
+}
+.service {
+    background-color: #f8f9fa30;
+}
+.mt {
+    margin-top: 2rem;
+}
+.mb {
+    margin-bottom: 2rem;
+}
+.ml {
+    margin-left: 2rem;
+}
+.mr {
+    margin-right: 2rem;
+}
+.sub-text {
+    font-size: 1rem;
+}
+.main-text {
+    font-size: 3rem;
+}
+.black {
+    color: black;
+}
+section {
+    margin-bottom: 2rem;
+    padding: 2rem; 
+    min-height: 40vh;
+    text-align: center;
+    color: #a19191e8;
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.container img {
+    padding: 2vh;
+    height: 10rem;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: var(--color-link);
+    outline: none;
+}
+.produits-home {
+    display: flex;
+}
+.produits-home-item:hover {
+    transform: scale(1.05);
+}
+.produits-home-item {
+    overflow: hidden; 
+    position: relative;
+    padding: 1rem;
+}
+.produits-home-item .produits-home-title {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-shadow:0px 1px 0px #0a3103;
+}
+.produits-home .produits-home-item a img {
+    height: 25rem;
+    border:1px solid #7c8f7c;
+    border-bottom-color: #7c8f7c;
+}
+
+.btn {
+    background-color: #7c8f7c;
+	border-radius:28px;
+	border:1px solid #7c8f7c;
+	display:inline-block;
+	cursor:pointer;
+	color:#0a080a;
+	font-size:14px;
+	padding:0.7rem 1.5rem;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.border-dotted {
+    border: 4px dotted;
+    width: 40vw;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .produits-home {
+      display: block;
+    }
+}
